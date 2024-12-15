@@ -1,0 +1,53 @@
+.nosotros .primera-seccion {
+    margin-top: 5vh;
+    display: flex;
+    align-content: center;
+}
+
+.nosotros .primera-seccion .contentL .directiva-principal{
+    margin-left: 8vw;
+}
+.nosotros .primera-seccion .text {
+    margin-left: 5vw;
+    margin-top: 1vw;
+}
+
+.segunda-seccion h5{
+    font-weight: 400;
+}
+
+
+.nosotros .container-directivas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nosotros .directiva{
+    transition: 500ms;
+    background-color: #7084bca0;
+    border-radius: 55px;
+    width: 30%;
+    margin: 1% 1.5% 1% 1.5%;
+    text-align: center;
+
+}
+
+.nosotros .directiva div{
+    margin: 10px auto;
+}
+
+.nosotros .directiva hr{
+    border: 1px solid #ffffff; width: 60%; margin: 10px auto;
+
+}
+
+.nosotros .directiva h5{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.nosotros .directiva:hover{
+    transition: 500ms;
+    background-color:#7084bc;
+    transform: scale(1.1);
+}

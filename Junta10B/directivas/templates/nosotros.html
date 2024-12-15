@@ -1,0 +1,71 @@
+{%extends "index.html"%}
+{%load static%}
+{%block title%} Nosotros- Junta De Vecinos {%endblock%}
+
+{%block content%}
+    <div class="nosotros">
+        <div class="primera-seccion">
+            <div class="contentL content">
+                <div class="text">
+                    <div class="title">
+                        <h3> Nuestra directiva </h3>
+                        <h2><span class="resaltadoPlaza">{% if directiva_mayor %} {{ directiva_mayor.nombre }} {% endif %}</span></h2>
+                    </div>
+        
+                    <p class="parrafoEntrada">
+                        <div class="directiva-principal">
+                            <ul>
+                                {% for cargo in cargos_mayor %}
+                                <li><h5>{{cargo.nombre}} - {{cargo.cargo}}</h5></li> 
+                                {% empty %}
+                            <li><h5>No hay cargos registrados :(</h5> </li>
+                            {% endfor %}  
+                            </ul>
+                                                      
+                        </div>
+
+                    </p>
+                </div>
+            </div>
+            <div class="contentR content">
+                <img id="mapa" src="{% static 'img/fotoDirectivas.jpg' %}" alt="mapa">
+            </div>
+        </div>
+        <div class="segunda-seccion">
+            <div class="text">
+                <div class="title">
+                <h2>Nuestra historia</h2>
+                </div>
+            <div >
+                <h5>
+                    La Junta de Vecinos 10B de la comuna de Providencia nace en noviembre de 2013 motivada por la necesidad de contar con una organización que nos representara ante la Municipalidad para defender nuestro barrio. Nuestro propósito principal fue solicitar la modificación del plan regulador de la comuna para preservar el carácter residencial de nuestro barrio definido circunscrito entre vereda sur de Avenida Bilbao, Calle Amapolas, vereda norte de Avenida Diego de Almagro y vereda oriente de Avenida Los Leones.
+                    <br><br>
+                    Gracias a nuestro esfuerzo colectivo, logramos reducir la altura permitida de construcción en el barrio a tres pisos, asegurando no solo la conservación de nuestras casas, sino también la preservación de nuestra identidad comunitaria y la calidad de vida. En el proceso, nos conocimos y reconocimos como vecinos, comenzando a saludarnos y a apoyarnos mutuamente, lo que ha reforzado la cohesión y solidaridad en nuestra vecindad, haciendo de nuestro barrio un lugar único.
+                    </h5>
+            </div>
+            </div>
+            
+        </div>
+        <div class="tercera-seccion">
+            <h3>Directivas por años</h3>
+            <div class="container-directivas">
+                {% for directiva in directivas %}
+                <div class="directiva">
+                    <div>
+                        <h2>{{ directiva.nombre }}</h2>
+                        <hr>
+                        {% for cargo in directiva.cargos_set.all %}
+                            <h5>{{ cargo.nombre }} - {{ cargo.cargo }}</h5>
+                        {% empty %}
+                            <h5>No hay cargos registrados.</h5>
+                        {% endfor %}
+                    </div>
+                    
+                </div>
+                    
+                {% endfor %}
+            </div>
+            
+        </div>
+    </div>
+{%endblock%}
