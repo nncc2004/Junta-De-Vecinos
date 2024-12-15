@@ -1,0 +1,32 @@
+{%extends "index.html"%}
+{%load static%}
+
+{%block title%} Inicio - Junta De Vecinos {%endblock%}
+
+{%block content%}
+    <div class="primera-seccion">
+        <div class="contentL content">
+            <div class="text">
+                <div class="title">
+                    <h3>Junta de Vecinos </h3>
+                    <h2> Barrio <span class="resaltadoPlaza">Plaza Uruguay</span> </h2>
+                </div>
+                
+                
+                <p class="parrafoEntrada">
+                    <h5>
+                        Somos una comunidad comprometida con mejorar nuestro barrio y ser el nexo entre los vecinos y la municipalidad. Nuestro objetivo es escuchar, trabajar juntos y construir soluciones que beneficien a toda nuestra comunidad.
+                    </h5>
+                    <div class="botones">
+                        <a class="btn btn-primary ov-btn-slide-left btn-lg nosotros" href="#">Nosotros</a>
+                        <a class="btn btn-primary ov-btn-slide-left btn-lg contacto" href="#footer">Contacto</a>
+                    </div>
+
+                </p>
+            </div>
+        </div>
+        <div class="contentR content">
+            <img id="mapa" src="{% static 'img/mapa.png' %}" alt="mapa">
+        </div>
+    </div>
+{%endblock%}

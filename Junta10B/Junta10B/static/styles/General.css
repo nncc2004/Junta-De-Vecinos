@@ -1,10 +1,5 @@
-body #cuerpo{
-    background-color: #fcfcfc
-}
-
-
 .contenido {
-    height: 700px;
+    min-height: 500px;
 }
 
 
@@ -119,4 +114,52 @@ body #cuerpo{
     color: #fcfcfc;
 }
 
+/* Inicio */
+.primera-seccion {
+    margin-top: 10vh;
+    display: flex;
+}
+.primera-seccion .content{
+    width: 48%;
+    margin: 0 1% 0 1%;    
+}
 
+.primera-seccion .contentL h2{
+    font-size: 3vw;
+    line-height: 0.8;
+
+    
+}
+.primera-seccion .contentL .text{
+    margin-left: 2vw;
+    text-align: justify;
+    text-justify: inter-word
+}
+
+.primera-seccion .contentL .text .resaltadoPlaza{
+    color: #7084bc;
+}
+.primera-seccion .contentL h3{
+    font-size: 2vw;
+    line-height: 0.4;
+    
+}
+.primera-seccion .contentL .parrafoEntrada{
+    margin-top: 5vh;
+}
+
+.primera-seccion .botones{
+    margin-top: 5vh;
+    display: flex;
+}
+.primera-seccion .botones a{
+    width: 40%;
+    margin: 5%;
+    background-color: #7084bc;
+    border-color: rgba(0, 0, 0, 0.349);
+    border-width: 2px;
+}
+.primera-seccion .contentR img{
+    width: 45vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+}

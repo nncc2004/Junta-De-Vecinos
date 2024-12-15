@@ -1,0 +1,91 @@
+<div class="main-content">
+        <h1 class="title">Barrio PLaza Uruguay</h1>
+        <div class="floating-main-content">
+            <div class="content">
+                <div class="flotaing-main-left">
+                    <img id="mapa" src="{% static 'img/mapa.png' %}" alt="mapa">
+                </div>
+            </div>
+
+            <div class="content">
+
+                <div class="flotaing-main-right">
+                    <div class="text">
+                        <h5>Nuestra Comunidad</h5>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+/* Inicio */
+.main-content {
+    margin-top: 10vh;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.main-content .title{
+    margin-left: 5%;
+    font-style: italic;
+    font-size: 3vw;
+}
+
+.floating-main-content{
+    background-color: #7084bc;
+    height: fit-content;
+    /*border-radius: 50px;*/
+    display: flex;
+    align-items: center;
+    
+}
+.floating-main-content  .content{
+    width: 48%;
+    min-height: 20vw;
+    margin: 1%;
+
+}
+
+.content .flotaing-main-left{
+    min-height: 18vw;
+    margin-top: 1vw;
+    background-color: #fafafa;
+    width: 96%;
+    margin-left: 4%;
+    /*border-radius: 50px;*/
+}
+
+.content .flotaing-main-left img {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+    /*border-radius: 50px;*/
+}
+
+
+
+.floating-main-content .flotaing-main-right{
+    background-color: #fcfcfc;
+    margin: 2vh 0 2vh 0;
+    /*border-radius: 50px;*/
+    min-height: 18vw;
+}
+
+
+.floating-main-content .flotaing-main-right .text {
+    width: 90%;
+    margin: 0 5% 0 6%;
+}
+
+.flotaing-main-right .text h5 {
+    padding-top: 1vw;
+    font-size: 1.7vw;
+}
+.flotaing-main-right .text p {
+    margin: 2%;
+    font-size: 1.5vw;
+} 
