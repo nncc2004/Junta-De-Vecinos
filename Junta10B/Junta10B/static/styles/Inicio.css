@@ -103,3 +103,42 @@
     margin-bottom: 4vh;
     margin-left: 1%;
 }
+
+
+@media (max-width: 991px) {
+    .primera-seccion {
+        display: flex;
+        margin-top: 4vh;
+        flex-direction: column;
+    }
+    .primera-seccion .content{
+        width: 94%;
+        margin: 0 2% 0 2%;    
+    }
+    .primera-seccion .contentL .parrafoEntrada{
+        margin-top: 2vh;
+    }
+    .primera-seccion .contentR img{
+        width: 90vw;
+        margin-left: 4vw;
+    }
+    .segunda-seccion{
+        margin-top: 4%;
+    }
+    .tercera-seccion .contenedor-noticias{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .tercera-seccion .noticia{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .tercera-seccion{
+        margin-top: 4%;
+    }
+    .tercera-seccion .title{
+        text-align: center;
+    }
+
+}

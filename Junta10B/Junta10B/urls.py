@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import path
 import views as v
 from directivas import views as vd
+from django.views.generic import RedirectView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("inicio/", v.inicio),
@@ -25,4 +27,7 @@ urlpatterns = [
     path('seguridad/', v.seguridad),
     path('datos-utiles/', v.datos_utiles),
     path('reciclaje/', v.reciclaje),
+    path('', RedirectView.as_view(url='/inicio/', permanent=False)),
+    #Borrar luego el siguiente codigo y actualizar url noticias
+    path('noticias/', RedirectView.as_view(url='/inicio/', permanent=False)),
 ]

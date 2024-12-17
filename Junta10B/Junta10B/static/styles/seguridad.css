@@ -43,3 +43,22 @@
     align-content: center;
     justify-content: center;
 }
+
+@media (max-width: 991px) {
+    .seguridad .primera-seccion{
+        flex-direction: column-reverse !important;
+    }
+    .seguridad .primera-seccion .contentL img {
+        width: 80vw;
+    }
+    .seguridad .primera-seccion .title img{
+        width:10vw;
+        margin-bottom: 10px;
+    }
+    .seguridad .primera-seccion .title{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        margin-top: 10px;
+    } 
+}

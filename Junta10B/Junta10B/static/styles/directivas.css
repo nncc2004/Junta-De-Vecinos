@@ -1,5 +1,5 @@
 .nosotros .primera-seccion {
-    margin-top: 5vh;
+    margin-top: 10vh;
     display: flex;
     align-content: center;
 }
@@ -54,4 +54,16 @@
     transition: 500ms;
     background-color:#7084bc;
     transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+    .container-directivas{
+        flex-direction: column;
+    }
+    .directiva{
+        width: 96%;
+        margin: 2% 1.5% 2% 1.5%;
+        text-align: center;
+    
+    }
 }

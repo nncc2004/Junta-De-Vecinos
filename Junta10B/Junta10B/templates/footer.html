@@ -1,18 +1,20 @@
 {% load static %}
+
 <div class="footer-container text-center" id="footer">
 
-    <div>
+    <div class="column">
         <h1>De interés...</h1>
         <ul>
              <li><a href="/inicio">Inicio</a></li>
              <li><a href="/nosotros">Nosotros</a></li>
             
-             <li><a href="">Noticias</a></li>
-             <li><a href="">Seguridad</a></li>
-             <li><a href="">Reciclaje</a></li>
+             <li><a href="/noticias">Noticias</a></li>
+             <li><a href="/seguridad">Seguridad</a></li>
+             <li><a href="/reciclaje">Reciclaje</a></li>
+             <li><a href="/datos-utiles">Datos útiles</a></li>
         </ul>
     </div>
-    <div>
+    <div class="column columnaContacto">
         <h1>Contacto</h1>
         <div id="mail" class="contact">
             <a href="mailto:barrioplazauruguay@gmail.com">
@@ -53,7 +55,7 @@
             
 
     </div>
-    <div>
+    <div class="column">
         <img id="mapa" src="{% static 'img/mapa.png' %}" alt="mapa">
     </div>
 </div>

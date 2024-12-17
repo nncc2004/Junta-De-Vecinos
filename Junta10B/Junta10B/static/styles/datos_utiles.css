@@ -5,7 +5,7 @@
     justify-content: center;
     width: 95%;
     margin-left: 2.5%;
-    margin-top: 1%;
+    margin-top: 5vh;
     margin-bottom: 1%;
 
 }
@@ -18,13 +18,17 @@
     align-items: center;
     
 }
+.datos-utiles .quarterIMG{
+    width: 48%;
+    margin: 1% auto;
+}
 .datos-utiles h5{
     font-weight: 400;
 }
 .datos-utiles span{
     font-weight: 500;
 }
-.quarter img{
+.quarterIMG img{
     height: 50vh;
     display: block;
     margin: 0 auto;
@@ -50,4 +54,33 @@
 .quarter a{
     color: black;
     font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    .datos-utiles{
+        flex-direction: column;
+        word-wrap: break-word;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .datos-utiles .quarter{
+        width: 90%;
+        margin-left: 5%;
+        text-align: justify;
+        align-content: center;
+    }
+    .datos-utiles .quarter h2{
+        line-height: 0.9;
+    }
+    .datos-utiles .quarterIMG{
+        margin: 0;
+    }
+    .quarterIMG img{
+        width: 90vw;
+        margin-left: 5vw;
+        height: auto;
+    }
+    .quarter hr{
+        width: 100%;
+    }
 }

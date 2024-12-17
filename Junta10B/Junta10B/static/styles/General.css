@@ -1,5 +1,8 @@
-.contenido {
-    min-height: 90vh;
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Opcional: previene el desplazamiento horizontal */
 }
 
 
@@ -120,4 +123,77 @@
 .navbar ul a:hover {
     text-decoration: underline;
     color: #fcfcfc;
+}
+
+
+#btnTop {
+    display: none; /* Oculto inicialmente */
+    position: fixed;
+    bottom: 20px; /* Distancia desde abajo */
+    right: 1%; /* Distancia desde la derecha */
+    z-index: 99; /* Que quede encima de otros elementos */
+    font-size: 24px;
+    background-color: #465B96;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition:0.3s;
+    width: 50px;
+    border: 1px solid;
+    border-color: black;
+    
+}
+
+#btnTop:hover {
+    background-color: #061f6592;; /* Cambia color al pasar el cursor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+}
+
+
+@media (max-width: 991px) {
+    body{
+        padding-top: 80px !important;
+    }
+    .navbar{
+        height: fit-content;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-container .column{
+        width: 100%;
+        height: fit-content;
+    }
+    .footer-container div #mapa{
+        height: 50vw;
+    }
+    .footer-container .contact img {
+        height: 25px;
+        margin-right: 1vw;
+        
+    }
+    .footer-container .contact a svg {
+        margin-left: 5px;
+        margin-top: 0.5%;
+    }
+    #btnTop:hover {
+        background-color: #465B96;; /* Cambia color al pasar el cursor */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+    }
+    .navbar .navbar-toggler{
+        border-color: black;
+    }
+    .footer-container .column .contact{
+        margin: 0;
+        align-self: center;
+        width: fit-content;
+    }
+    .footer-container .columnaContacto{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
 }

@@ -22,13 +22,16 @@
     
     <title>{%block title%}{%endblock%}</title>
 </head>
-<body style="padding-top: 56px; background-color: #fcfcfc;">
+<body style="padding-top: 56px; background-color: #fcfcfc; width: 100%;
+margin: 0;
+padding: 0;
+overflow-x: hidden;">
     <div id="cuerpo">
         {% include "NAVBAR.html" %}
         <div class="contenido">
             {%block content%}{%endblock%}
         </div>
-        
+        {% include "back-to-top.html" %}
         {% include "footer.html" %}
     </div>
 </body>
