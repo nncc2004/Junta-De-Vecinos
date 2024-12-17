@@ -1,0 +1,45 @@
+.seguridad .primera-seccion img {
+    box-shadow: none;
+    align-content: center;
+}
+.seguridad .primera-seccion .contentL{
+    margin-left: 10%;
+    width: 30%;
+}
+
+.seguridad .primera-seccion .content{
+    align-content: center;
+}
+.seguridad .primera-seccion .contentL img {
+    width: 30vw;
+}
+
+.seguridad .primera-seccion .title{
+    display: flex;
+    align-items: center;
+} 
+
+.seguridad .primera-seccion .title img{
+    width: 2.5vw;
+}
+.seguridad .segunda-seccion{
+    margin-bottom: 1%;
+    background-color: #fcfcfc;
+}
+
+.seguridad .segunda-seccion img{
+    width: 24px;
+}
+.seguridad .segunda-seccion a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.seguridad .segunda-seccion .numeroEmergencia{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}

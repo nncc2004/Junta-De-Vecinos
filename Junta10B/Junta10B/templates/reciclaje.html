@@ -1,0 +1,128 @@
+{%extends "index.html"%}
+{%load static%}
+{%block title%} Reciclaje - Junta De Vecinos {%endblock%}
+
+{%block content%}
+    <div class="reciclaje">
+        <div class="primera-seccion">
+            <div class="contentL content">
+                <div class="text">
+                    <div class="title">
+                        <h3> ¿Qué es la Ley REP? </h3>
+                        <h2><span class="resaltadoPlaza">Reciclaje</span></h2>
+                    </div>
+        
+                    <p class="parrafoEntrada">
+                        <div class="directiva-principal">
+                            <h5>La Ley 20.920 de Responsabilidad Extendida del Productor (REP), cuya parte relativa a envases y embalajes livianos comenzó a operar  el 2 de octubre, 2023, trajo cambios para nosotros como ciudadanos y vecinos.</h5>
+                            <br>
+                            <h5>La ley que se implementará de manera gradual- obliga a las empresas que ponen en el mercado productos envasados a que, organizadas en un sistema de gestión, se hagan cargo de la recolección y reciclaje de ellos, estableciendo metas diferenciadas por material.</h5>
+                            <br>
+                            <h5>El reciclaje en Providencia antes de operar la ley REP, era mantenido por la Municipalidad. Con la Ley REP, el retiro del reciclaje domiciliario se hará por vehículos financiados por los productores de residuos, agrupados en los Grandes Sistemas Colectivos de Gestión, denominados GRANSIC. </h5>
+                            <br>
+                            <h5>Otro cambio fundamental es que todos debemos reciclar.</h5>
+                            <br>
+                            <h5>En el caso de Providencia, la empresa ReSimple es quien se encargará de gestionar el retiro, en días diferentes, en las casas y edificios, los residuos ya clasificados por tipo de material en 3 grupos: <span class="resaltadoPlaza"> Papeles/Cartón,  Envases Livianos </span>y <span class="resaltadoPlaza">Vidrios.  </span></h5>
+                            <br>
+                            <h5>En nuestro barrio el camión de reciclaje pasará todos los miércoles entre las 9:00 y 21:30. El reciclaje debe dejarlo fuera de su casa, separado en los 3 grupos descritos. Puede usar el contenedor amarillo de reciclaje, pero dentro de él los residuos a reciclar deben estar separados en las 3 categorías.</h5>
+                                      
+                        </div>
+
+                    </p>
+                </div>
+            </div>
+            <div class="contentR content">
+                <img id="mapa" src="{% static 'img/reciclaje.jpg' %}" alt="mapa">
+            </div>
+        </div>
+
+        <div class="tercera-seccion">
+            <h3>Detalles por tipo</h3>
+            <div class="container-directivas">
+                <div class="directiva">
+                    <div>
+                        <h3>Papeles y Cartones:</h3>
+                        <hr>
+                            <h5><span>Cartones:</span> cajas de cartón corrugado, cajas de cartulina y cajas de huevo, etc.</h5>
+                            <h5><span>Papeles:</span> periódicos, revistas, cuadernos y papeles blancos, etc.</h5>
+                    </div>
+                    
+                    
+                </div>
+                <div class="directiva">
+                    <div>
+                        <h3>Envases livianos:</h3>
+                        <hr>
+                            <h5> <span>Plásticos tipo 1 (PET):</span>   botellas de bebida, agua, jugos y aceites.</h5>
+                            <h5><span>Plásticos tipo 2 (PE): </span>   botellas de shampoo, detergentes y otros.</h5>
+                            <h5>Envases de plásticos, tipo 4, 5 y 6: envoltorios  de fideos, arroz, servilletas, papel higiénico, pan, etc. <span>NO SE RECICLA</span> el plástico  tipo 7 (siete) .</h5>
+                            <h5> <span>Latas de aluminio: </span> Bebidas y cervezas.</h5>
+                            <h5><span>Latas de hojalata:</span> De alimentos en conserva.</h5>
+                            <h5><span>nvases Tetrapack: </span>Eenvases de cartón para bebidas/leche…</h5>
+                    </div>
+                    
+                    
+                </div>
+                <div class="directiva">
+                    <div>
+                        <h3>Vidrios:</h3>
+                        <hr>
+                            <h5>Botellas de vino, bebidas y cervezas.</h5>
+                            <h5>Frascos de vidrio de conservas y perfumes.</h5>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="primera-seccion" id="V2">
+            <div class="contentL content">
+                <div class="contentR content">
+                    <img id="mapa" src="{% static 'img/reciclaje2.jpg' %}" alt="mapa">
+                </div>
+            </div>
+            <div class="contentL content">
+                <div class="text">        
+                    <p class="parrafoEntrada">
+                        <div class="directiva-principal">
+                            <h5>Por otro lado, en nuestro barrio se mantiene el punto de Reciclaje móvil de los días jueves en la plaza Uruguay hasta nov 2027.</h5>
+                            <h5>Para dudas o consultas escribir a (aconsejamos de manera conjunta a todos los email):</h5>
+                            <ul>
+                                <li><h5><a href="mailto:info@resimple.cl">info@resimple.cl</a></h5></li>
+                                <li><h5><a href="mailto:asistencia@resimple.cl">asistencia@resimple.cl</a></h5></li>
+                                <li><h5><a href="mailto:medioambiente@providencia.cl">medioambiente@providencia.cl</a></h5></li>
+                            </ul>
+                            <h5>y/o contactarse a través de la aplicación <a href="https://www.resimple.cl/">Resimple</a>.</h5>
+                            <hr>
+                            <h5>Continúa el Punto de Reciclaje Móvil del día <span>jueves en nuestra <span class="resaltadoPlaza">plaza Uruguay </span></span>y con mejoras!  </h5>
+                            <ul>
+                                <li><h5>Se extiende el servicio por 3 años a partir de nov 2024.</h5></li>
+                                <li><h5>Horario de atención: 11:00 a 19:00 hrs.</h5></li>
+                                <li><h5>Se pueden reciclar más artículos: pilas, aceite usado…..</h5></li>
+                            </ul>
+                            <h5> <span>Productos que se pueden reciclar:</span></h5>
+                            <ul>
+                                <li><h5>Papeles y cartones.</h5></li>
+                                <li><h5>Vidrios, botellas y frascos.</h5></li>
+                                <li><h5>Plásticos tipo 1, 2, 4, 5 y 6</h5></li>
+                                <li><h5>Envases de latas y hojalatas.</h5></li>
+                                <li><h5>Envases de Tetrapak.</h5></li>
+                                <li><h5>Aceite de uso doméstico (frituras).</h5></li>
+                                <li><h5>Pilas en desuso de uso doméstico.</h5></li>
+                                <li><h5>Electrónicos (notebook, teléfonos, cargadores en desuso).</h5></li>
+                            </ul>
+                            <h5>Cabe destacar que habrá asistencia de profesionales del área de Medio Ambiente de la Municipalidad</h5>
+
+                            
+                        </div>
+    
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+{%endblock%}

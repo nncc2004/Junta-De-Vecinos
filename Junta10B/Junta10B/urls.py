@@ -20,7 +20,9 @@ import views as v
 from directivas import views as vd
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("prueba/", v.prueba),
     path("inicio/", v.inicio),
     path('nosotros/', vd.nosotros),
+    path('seguridad/', v.seguridad),
+    path('datos-utiles/', v.datos_utiles),
+    path('reciclaje/', v.reciclaje),
 ]

@@ -17,12 +17,16 @@
 }
 
 
-.nosotros .container-directivas {
+
+.tercera-seccion h3{
+    margin-left: 5%;
+}
+.container-directivas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.nosotros .directiva{
+.directiva{
     transition: 500ms;
     background-color: #7084bca0;
     border-radius: 55px;
@@ -32,21 +36,21 @@
 
 }
 
-.nosotros .directiva div{
+.directiva div{
     margin: 10px auto;
 }
 
-.nosotros .directiva hr{
+.directiva hr{
     border: 1px solid #ffffff; width: 60%; margin: 10px auto;
 
 }
 
-.nosotros .directiva h5{
+.directiva h5{
     font-weight: 400;
     font-size: 15px;
 }
 
-.nosotros .directiva:hover{
+.directiva:hover{
     transition: 500ms;
     background-color:#7084bc;
     transform: scale(1.1);

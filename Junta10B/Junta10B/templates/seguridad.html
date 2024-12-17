@@ -1,0 +1,71 @@
+{%extends 'index.html'%}
+{% load static %}
+{%block title%} Seguridad - Junta De Vecinos {%endblock%}
+
+{%block content%}
+<div class="seguridad">
+    <div class="primera-seccion">
+        <div class="contentL content">
+                <img id="mapa" src="{% static 'img/sosafe.png' %}" alt="mapa">
+        </div>
+        <div class="contentR content">  
+            <div class="text">
+                <div class="title">
+                    <img src="{% static 'img/logo sosafe.jpg' %}" alt="">
+                    <h2> SOSAFE </h2>
+                </div>
+                
+                
+                <p class="parrafoEntrada">
+                    <h5>
+                        Aplicación móvil para cuidar tu vecindario y comunidad. Al reportar una amplia gama de situaciones de riesgo o incidentes en tu área, SOSAFE te ayuda a conectar con vecinos y autoridades para obtener ayuda rápidamente en caso de robos, asaltos, actividad sospechosas y problemas de salud, entre muchos otros tipos de emergencias.
+                    </h5>
+                    <div class="botones">
+                        <a class="btn btn-primary ov-btn-slide-left btn-lg nosotros" href="https://es.sosafeapp.com/">Ir a SOSAFE</a>
+                        <a class="btn btn-primary ov-btn-slide-left btn-lg contacto" href="https://es.sosafeapp.com/download">Descargar</a>
+                    </div>
+        
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="segunda-seccion">
+        <h2>Números de emergencias</h2>
+        <div class="container-directivas">
+            <div class="directiva">
+                <div>
+                    <h4>Carabineros</h4>
+                    <hr>
+                    <div class="numeroEmergencia">
+                        <img src="{% static 'img/telephone.svg' %}" alt="">
+                        <a href="tel:133">133</a>
+                    </div>
+                        
+                </div>
+            </div>
+            <div class="directiva">
+                <div>
+                    <h4>Seguridad Providencia</h4>
+                    <hr>
+                    <div class="numeroEmergencia">
+                        <img src="{% static 'img/telephone.svg' %}" alt="">
+                        <a href="tel:133">1414</a>
+                    </div>
+                </div>
+            </div>
+            <div class="directiva">
+                <div>
+                    <h4>Cuadrante</h4>
+                    <hr>
+                    <div class="numeroEmergencia">
+                        <img src="{% static 'img/telephone.svg' %}" alt="">
+                        <a href="tel:133">127</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

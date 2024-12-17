@@ -1,0 +1,53 @@
+.datos-utiles{
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+.datos-utiles .quarter{
+    height: fit-content;
+    min-height: 45vh;
+    width: 48%;
+    margin: 1% auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.datos-utiles h5{
+    font-weight: 400;
+}
+.datos-utiles span{
+    font-weight: 500;
+}
+.quarter img{
+    height: 50vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.quarter hr{
+    width: 60%;
+}
+
+.quarter p{
+    text-align: justify;
+    width: 90%;
+}
+
+.quarter .title h2{
+    margin-top: 5%;
+    line-height: 0.1;
+}
+
+.quarter .title h3{
+    color:#7084bc;
+}
+.quarter a{
+    color: black;
+    font-weight: 500;
+}

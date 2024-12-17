@@ -1,4 +1,5 @@
 {% load static %}
+<!--
 <nav class="navbar navbar-expand-lg  fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -19,11 +20,49 @@
             <a class="nav-link" href="#"><h5>Noticias</h5></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><h5>Seguridad</h5></a>
+            <a class="nav-link" href="/seguridad"><h5>Seguridad</h5></a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#"><h5>Reciclaje</h5></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#"><h5>Datos útiles</h5></a>
+          </li>
       </div>
     </div>
   </nav>
+
+-->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'img/logo editado.png' %}" alt="" style="height: 50px; margin-left: 10px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/inicio/' %}active{% endif %}" href="/inicio"><h5>Inicio</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/nosotros/' %}active{% endif %}" href="/nosotros"><h5>Nosotros</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/noticias/' %}active{% endif %}" href="/noticias"><h5>Noticias</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/seguridad/' %}active{% endif %}" href="/seguridad"><h5>Seguridad</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/reciclaje/' %}active{% endif %}" href="/reciclaje"><h5>Reciclaje</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/datos-utiles/' %}active{% endif %}" href="/datos-utiles"><h5>Datos útiles</h5></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,27 @@
+.reciclaje .directiva h5{
+    font-size: large;
+    font-weight: 400;
+}
+.reciclaje .directiva div{
+    margin-bottom: 10%;
+    width: 95%;
+    justify-content: center;
+}
+
+.reciclaje span{
+    font-weight: 500;
+}
+
+.reciclaje #V2{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.reciclaje .primera-seccion h5{
+    font-weight: 400;
+}
+.reciclaje a{
+    color: black;
+}
+#V2 .contentL img{
+    margin-top: 10%;
+}
